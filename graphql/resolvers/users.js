@@ -31,6 +31,7 @@ module.exports = {
             if(!valid){
                 throw new UserInputError('Errors', {errors});
             }
+            
             const user = await User.findOne({username});
 
 
